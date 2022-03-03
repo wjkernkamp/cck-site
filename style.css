@@ -1,149 +1,141 @@
- /* primary header */
-
-.title {
-    margin: 1rem;
+body {
+    margin: 0;
 }
 
-.primary-header {
+h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.header {
+    
+    background-color: black;
+    padding: 20px 60px;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.mobile-nav-toggle {
-    display: none;
-}
-
-.primary-navigation {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.primary-navigation a {
+.nav a {
+    float: left;
+    color: white;
     text-decoration: none;
-    color: black;
+    text-align: center;
+    padding: 12px;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
     text-transform: uppercase;
 }
 
-@media (max-width: 35em) {
-    .primary-navigation {
-        --gap: 2em;
-
-        position: fixed;
-        z-index: 1000;
-        inset: 0 0 0 30%;
-
-        flex-direction: column;
-        padding: min(30vh, 10rem) 2rem;
-        
-        background: hsl(0 0% 100% / 0.7);
-        backdrop-filter: blur(1rem);
-
-        transform: translateX(100%);
-        transition: transform 350ms ease-in-out;
-    }
-
-    .primary-navigation[data-visible="true"] {
-        transform: translateX(0%);
-    }
-
-    .mobile-nav-toggle {
-        display: block;
-        position: absolute;
-        z-index: 9999;
-        background: red;
-        width: 2rem;
-        aspect-ratio: 1;
-        top: 2rem;
-        right: 2rem;
-        border: 0;
-    }
+.nav a:hover {
+    color: rgb(211, 58, 58);
 }
 
-@media (min-width: 35em) {
-    .primary-navigation {
-        --gap: clamp(1.5rem, 5vw, 3rem);
-        padding-block: 2rem;
-        padding-inline: clamp(3rem, 5vw, 10rem);
-    }
+a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    text-transform: uppercase;
 }
 
-/* hero */
+a:hover {
+    color: rgb(211, 58, 58);
+}
+
+#logo {
+    display: inline-block;
+    margin: 15px;
+    float: left;
+    height: 90px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.section_1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    align-items: center;
+}
 
 .hero {
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-    color: #ccc;
-    position: relative;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    letter-spacing: 17.5px;
-}
-
-.hero-sub {
-    letter-spacing: 5px;
-
-}
-
-.hero-one {
-    top: 0;
-    position: absolute;
-    width: 60%;
+    padding: 70px;
     background-color: black;
-    height: 100vh;
-    clip-path: polygon(0 0, 60vw 0, 40vw 100vh, 0 100vh);
-    z-index: 1;
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5)), url(/cck-site/img/board1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.hero-two {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60%;
-  background-color: green;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5)), url(/cck-site/img/drum3.PNG);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.hero_desc {
+    width: 50%;
+    text-align: center;
 }
 
-.hero-title {
-    z-index: 2;
+.photo {
+    padding: 0px 10px;
+    background-color: black;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.section_2 {
+    
+    position: relative;
+    width: 100%;
+
+    
+}
+
+h2 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 200px;
+    left: 0;
+    width: 100%;
 }
 
-.hero-primary {
-    font-size: 2em;
-    display: block;
-    font-weight: 700;
-    padding-bottom: 1em;
+.section_3 {
+    display: flex;
+    padding: 60px;
+    background-color: black;
 }
 
-
-
- /* general */
-
- body, html {
-     height: 100%;
- }
-
-body {
-    font-family: sans-serif;
-    background-color: rgb(199, 227, 255);
-
-    overflow-x: hidden;
+.mini_photo {
+    width: 50%;
 }
 
-.flex {
-     display: flex;
-     gap: var(--gap, 1rem);
- }
+.photo_desc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+@media screen and (max-width: 500px) {
+    .nav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .nav {
+        float: none;
+    }
+}
