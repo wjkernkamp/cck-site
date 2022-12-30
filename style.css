@@ -1,6 +1,8 @@
 body {
     margin: 0;
     background-color: black;
+   
+
 }
 
 h1 {
@@ -15,6 +17,7 @@ h2 {
 
 p {
     color: white;
+    text-align: center;
 }
 
 .header {
@@ -68,62 +71,35 @@ a:hover {
     border-radius: 50%;
 }
 
-.section_1 {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-
 .hero {
-    padding: 70px;
-    background-color: black;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 50%;
 }
 
-.hero_desc {
-    width: 50%;
-    text-align: center;
+
+.child:first-child {
+    margin-right: 0px;
 }
+
+
+
+
+.section1, .section2, .section3, .section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+
 
 img {
     height: auto;
     max-width: 100%;
 }
 
-
-
-h2 {
-    position: absolute;
-    top: 200px;
-    left: 0;
-    width: 100%;
-}
-
-.section_3 {
-    display: flex;
-    padding: 60px;
-    background-color: black;
-}
-
-
-.photo_desc {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
-@media screen and (max-width: 500px) {
-    .nav a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .nav {
-        float: none;
-    }
+.card {
+    max-width: 50%;
 }
