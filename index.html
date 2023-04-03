@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet" type="text/css">
   <title>CKCaptures</title>
-  <script src="nav.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
  <div class="header">
@@ -43,5 +43,23 @@
     <img class="card" src="/img/vidoe.jpeg">
   </div>
 </div>
+<section aria-label="Newest Photos">
+  <div class="carousel" data-carousel>
+    <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+    <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+
+    <ul data-slides>
+      <li class="slide" data-active>
+        <img src="/img/board1.jpg" alt="">
+      </li>
+      <li class="slide">
+        <img src="/img/drum1.JPG" alt="">
+      </li>
+      <li class="slide">
+        <img src="/img/P7291000.jpeg" alt="">
+      </li>
+    </ul>
+  </div>
+</section>
 </body>
 </html>
